@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/themes/peul.min.css" />
+    <link rel="stylesheet" href="/stylesheets/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body>
+    <div data-role="page">
+      <div data-role="header"><%= title %></div>
+      <div role="main" class="ui-content">
+        <form action="/doRegister" data-ajax="false" method="post">
+          <input placeholder="Username" type="text" name="" id="">
+          <input placeholder="Famale" type="radio" name="" id="">
+          <input placeholder="Male" type="radio" name="" id="">
+          <input placeholder="Password" type="password" name="" id="">
+          <input placeholder="Email" type="email" name="" id="">
+          <input type="submit" name="" id="">
+          <input type="reset" name="" id="">
+        </form>
+      </div>
+      <div data-role="footer">...</div>
+    </div>
+  </body>
+</html>
